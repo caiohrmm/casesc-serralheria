@@ -112,7 +112,7 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Sobre Nós</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Com mais de 20 anos de experiência, a{" "}
-              <strong>CASESC - CASA DO SERRALHEIRO DE SANTA CRUZ</strong> éé a
+              <strong>CASESC - CASA DO SERRALHEIRO DE SANTA CRUZ</strong> é a
               principal fornecedora de materiais para serralheria, oferecendo
               uma ampla variedade de produtos de alta qualidade. Trabalhamos com
               perfis metálicos, chapas, ferragens, tintas, máquinas e acessórios
