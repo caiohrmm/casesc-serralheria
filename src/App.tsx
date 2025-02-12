@@ -21,27 +21,27 @@ import backgroundImage4 from "./CASESC4.jpg";
 
 const services = [
   {
-    title: "Portões e Grades",
+    title: "Venda de Perfis e Chapas Metálicas",
     description:
-      "Portões automáticos e grades de segurança personalizadas para sua residência ou empresa.",
+      "Oferecemos uma ampla variedade de perfis, chapas de aço, alumínio e outros metais para fabricação e construção.",
     icon: "gate",
   },
   {
-    title: "Estruturas Metálicas",
+    title: "Venda de Ferragens e Acessórios",
     description:
-      "Projetos e execução de estruturas metálicas para galpões, coberturas e mezaninos.",
+      "Comercializamos dobradiças, fechaduras, roldanas, trilhos e diversos acessórios essenciais para serralheria.",
     icon: "structure",
   },
   {
-    title: "Manutenção",
+    title: "Venda de Máquinas e Ferramentas",
     description:
-      "Serviços de manutenção e reforma em peças metálicas, soldas e acabamentos.",
+      "Disponibilizamos equipamentos e ferramentas de corte, solda e acabamento para profissionais da área.",
     icon: "tools",
   },
   {
-    title: "Projetos Sob Medida",
+    title: "Venda de Tintas, Vernizes e Produtos para Acabamento.",
     description:
-      "Desenvolvimento de projetos personalizados de acordo com sua necessidade.",
+      "Trabalhamos com tintas, vernizes e produtos para tratamento e proteção de peças metálicas.",
     icon: "custom",
   },
 ];
@@ -49,17 +49,17 @@ const services = [
 const testimonials = [
   {
     name: "João Silva",
-    text: "Excelente trabalho na instalação do portão automático. Profissionais pontuais e qualificados.",
+    text: "Encontrei tudo o que precisava para minha serralheria na CASESC. Perfis, chapas e ferragens de alta qualidade, com ótimo preço e atendimento impecável!",
     rating: 5,
   },
   {
     name: "Maria Oliveira",
-    text: "Ótimo atendimento e acabamento impecável nas grades de proteção.",
+    text: "Produtos excelentes! Recomendo demais! Custo benefício bem alinhado, ótima loja !",
     rating: 5,
   },
   {
     name: "Pedro Santos",
-    text: "Estrutura metálica do meu galpão ficou perfeita. Recomendo!",
+    text: "A melhor loja para serralheiros! Comprei ferramentas para o meu negócio e fiquei impressionado com a variedade e o atendimento!",
     rating: 5,
   },
 ];
@@ -112,12 +112,14 @@ function App() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Sobre Nós</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Com mais de 20 anos de experiência, a{" "}
-              <strong>CASESC - CASA DO SERRALHEIRO DE SANTA CRUZ</strong> é
-              referência em qualidade e inovação no setor metalúrgico. Nossa
-              equipe altamente qualificada está comprometida em entregar
-              soluções personalizadas que atendam às necessidades específicas de
-              cada cliente, garantindo durabilidade e excelência em cada
-              projeto.
+              <strong>CASESC - CASA DO SERRALHEIRO DE SANTA CRUZ</strong> éé a
+              principal fornecedora de materiais para serralheria, oferecendo
+              uma ampla variedade de produtos de alta qualidade. Trabalhamos com
+              perfis metálicos, chapas, ferragens, tintas, máquinas e acessórios
+              para atender todas as necessidades do setor. Nossa equipe
+              altamente qualificada está pronta para oferecer suporte e as
+              melhores soluções para seu negócio, garantindo durabilidade,
+              eficiência e excelência em cada produto.
             </p>
           </div>
         </div>
@@ -180,7 +182,7 @@ function App() {
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <Phone className="w-5 h-5 mr-2" />
-                  <span>(11) 99999-9999</span>
+                  <span>(14) 3372-0512</span>
                 </li>
                 <li className="flex items-center">
                   <Mail className="w-5 h-5 mr-2" />

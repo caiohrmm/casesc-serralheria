@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  PenTool as Tool,
-  Heater as Gate,
-  Building2,
-  Wrench,
-} from "lucide-react";
+import { FaWarehouse, FaTools, FaShoppingCart, FaPaintRoller } from "react-icons/fa";
 
 interface ServiceCardProps {
   title: string;
@@ -20,13 +15,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   const getIcon = () => {
     switch (icon) {
       case "gate":
-        return <Gate className="w-12 h-12" />;
+        return <FaWarehouse className="w-12 h-12" />;
       case "structure":
-        return <Building2 className="w-12 h-12" />;
+        return <FaTools className="w-12 h-12" />;
       case "tools":
-        return <Wrench className="w-12 h-12" />;
+        return <FaShoppingCart className="w-12 h-12" />;
       case "custom":
-        return <Tool className="w-12 h-12" />;
+        return <FaPaintRoller className="w-12 h-12" />;
       default:
         return null;
     }
