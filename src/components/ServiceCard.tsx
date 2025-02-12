@@ -33,12 +33,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   };
 
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
       <div className="text-gray-800 mb-4">{getIcon()}</div>
-      <h3 className="text-xl font-bold mt-4 mb-4">{title}</h3>
-      <p className="text-gray-600 mt-2">{description}</p>
+      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <p className="text-gray-600">{description}</p>
     </div>
   );
-};
+};  
 
 export default ServiceCard;

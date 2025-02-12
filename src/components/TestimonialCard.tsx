@@ -1,5 +1,5 @@
-import React from 'react';
-import { Star } from 'lucide-react';
+import React from "react";
+import { Star } from "lucide-react";
 
 interface TestimonialCardProps {
   name: string;
@@ -7,10 +7,14 @@ interface TestimonialCardProps {
   rating: number;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, text, rating }) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({
+  name,
+  text,
+  rating,
+}) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg">
-      <div className="mb-4 flex">
+    <div className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
+      <div className="flex mb-4 justify-center">
         {[...Array(rating)].map((_, i) => (
           <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
         ))}

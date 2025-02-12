@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsOpen(false);
     }
   };
@@ -21,38 +21,38 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <span className="text-white text-xl font-bold">CASESC - CASA DO SERRALHEIRO DE SANTA CRUZ</span>
+            <span className="text-white text-xl font-bold">CASESC</span>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               <button
-                onClick={() => scrollToSection('inicio')}
+                onClick={() => scrollToSection("inicio")}
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Início
               </button>
               <button
-                onClick={() => scrollToSection('sobre')}
+                onClick={() => scrollToSection("sobre")}
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Sobre
               </button>
               <button
-                onClick={() => scrollToSection('servicos')}
+                onClick={() => scrollToSection("servicos")}
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Serviços
               </button>
               <button
-                onClick={() => scrollToSection('localizacao')}
+                onClick={() => scrollToSection("localizacao")}
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Localização
               </button>
               <button
-                onClick={() => scrollToSection('depoimentos')}
+                onClick={() => scrollToSection("depoimentos")}
                 className="text-gray-300 hover:text-white transition-colors"
               >
                 Depoimentos
@@ -72,7 +72,11 @@ const Navbar: React.FC = () => {
               onClick={toggleMenu}
               className="text-gray-300 hover:text-white"
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? (
+                <X className="h-6 w-6" />
+              ) : (
+                <Menu className="h-6 w-6" />
+              )}
             </button>
           </div>
         </div>
@@ -82,31 +86,31 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button
-                onClick={() => scrollToSection('inicio')}
+                onClick={() => scrollToSection("inicio")}
                 className="block text-gray-300 hover:text-white w-full text-left px-3 py-2 rounded-md"
               >
                 Início
               </button>
               <button
-                onClick={() => scrollToSection('sobre')}
+                onClick={() => scrollToSection("sobre")}
                 className="block text-gray-300 hover:text-white w-full text-left px-3 py-2 rounded-md"
               >
                 Sobre
               </button>
               <button
-                onClick={() => scrollToSection('servicos')}
+                onClick={() => scrollToSection("servicos")}
                 className="block text-gray-300 hover:text-white w-full text-left px-3 py-2 rounded-md"
               >
                 Serviços
               </button>
               <button
-                onClick={() => scrollToSection('localizacao')}
+                onClick={() => scrollToSection("localizacao")}
                 className="block text-gray-300 hover:text-white w-full text-left px-3 py-2 rounded-md"
               >
                 Localização
               </button>
               <button
-                onClick={() => scrollToSection('depoimentos')}
+                onClick={() => scrollToSection("depoimentos")}
                 className="block text-gray-300 hover:text-white w-full text-left px-3 py-2 rounded-md"
               >
                 Depoimentos
