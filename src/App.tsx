@@ -6,18 +6,16 @@ import {
   MapPin,
   Facebook,
   Instagram,
-  Apple as WhatsApp,
 } from "lucide-react";
 
 import { FaWhatsapp } from "react-icons/fa";
 import ServiceCard from "./components/ServiceCard";
 import TestimonialCard from "./components/TestimonialCard";
-import ImageCarousel from "./components/ImageCarousel";
 import Navbar from "./components/Navbar";
-import backgroundImage from "./CASESC1.jpg";
-import backgroundImage2 from "./CASESC2.jpg";
-import backgroundImage3 from "./CASESC3.jpg";
 import backgroundImage4 from "./CASESC4.jpg";
+// Importando o ícone de WhatsApp do heroicons
+import { PhoneIcon } from "@heroicons/react/24/solid";
+import logoCaioMartins from "./logocaiomartins.png";
 
 const services = [
   {
@@ -64,8 +62,6 @@ const testimonials = [
   },
 ];
 
-const images = [backgroundImage, backgroundImage2, backgroundImage3];
-
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -74,36 +70,32 @@ function App() {
       {/* Header */}
       <header
         id="inicio"
-        className="relative pt-16 min-h-[80vh] flex items-center bg-cover bg-center"
+        className="relative pt-16 min-h-[100vh] flex items-center bg-cover bg-center"
         style={{
           backgroundImage: `url(${backgroundImage4})`,
         }}
       >
-        {/* Overlay para desfoque */}
-        <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+        {/* Overlay mais escuro para melhor contraste */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        <div className="container mx-auto px-4 py-16 md:py-24 relative">
+        <div className="container mx-auto px-4 py-20 md:py-32 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 text-white">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
               CASESC - CASA DO SERRALHEIRO DE SANTA CRUZ
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white">
-              Qualidade e precisão em cada projeto!
+            <p className="text-xl md:text-3xl mb-10 text-white">
+              Especializada na venda dos melhores produtos para serralheria.
             </p>
             <a
               href="https://wa.me/5511999999999"
-              className="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300"
+              className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-10 rounded-full shadow-lg"
             >
+              <PhoneIcon className="w-6 h-6 mr-2" />
               Solicitar Orçamento
             </a>
           </div>
         </div>
       </header>
-
-      {/* Image Carousel */}
-      <section className="py-12">
-        <ImageCarousel images={images} />
-      </section>
 
       {/* About Us */}
       <section id="sobre" className="py-16 bg-white">
@@ -231,7 +223,12 @@ function App() {
               &copy; 2025 CASESC - Casa do serralheiro de Santa Cruz. Todos os
               direitos reservados.
             </p>
-            <p>Desenvolvido por Caio Henrique R. Martins</p>
+            <div className="mt-4 flex flex-col items-center">
+              <img src={logoCaioMartins} alt="Logo Caio Martins" className="h-10 mb-2" />
+              <a href="https://caiohenriquerm.com.br" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white">
+                Caio Martins | Desenvolvedor Web
+              </a>
+            </div>
           </div>
         </div>
       </footer>

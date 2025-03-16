@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      element.scrollIntoView({ behavior: "auto" });
       setIsOpen(false);
     }
   };
@@ -29,37 +29,37 @@ const Navbar: React.FC = () => {
             <div className="ml-10 flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white"
               >
                 Início
               </button>
               <button
                 onClick={() => scrollToSection("sobre")}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white"
               >
                 Sobre
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white"
               >
                 Serviços
               </button>
               <button
                 onClick={() => scrollToSection("localizacao")}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white"
               >
                 Localização
               </button>
               <button
                 onClick={() => scrollToSection("depoimentos")}
-                className="text-gray-300 hover:text-white transition-colors"
+                className="text-gray-300 hover:text-white"
               >
                 Depoimentos
               </button>
               <a
                 href="https://wa.me/5511999999999"
-                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full transition duration-300"
+                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full"
               >
                 Solicitar Orçamento
               </a>
@@ -117,7 +117,7 @@ const Navbar: React.FC = () => {
               </button>
               <a
                 href="https://wa.me/5511999999999"
-                className="block bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-center transition duration-300"
+                className="block bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-md text-center"
               >
                 Solicitar Orçamento
               </a>
